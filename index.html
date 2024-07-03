@@ -8,18 +8,220 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.p_iframe iframe {
+			  width:100%;
+			  flex: 1;
+			  height:500px;
+		  	}
+		  </style>
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h6>Metrics, Methods, Params</h6>
+					<p>Exploring Rinap I & V</p>
+					<p style="font-size: 15px;">(notes in vertical slides)</p>
+				</section>
+				<section>
+					<section>
+						<p1>Does the corpus change with minimum_length?</p> 
+						<div class="p_iframe">
+							<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/n_rina_comp.html">	
+							</iframe>
+						</div>
+					</section>
+						<section>
+							<p>Rinap distribution:</p>
+							<p>
+								<ul style="font-size: 30px;">
+								<li>Based on "partial_length" in the corpus metadata </li>
+								<li>No significant differences for corpus distribution</li>									
+								</ul>
+							</p>
+						</section>
+				</section>
+				<section>
+					<section>
+						<p1>Does the corpus change with minimum_length?</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/n_script_dist.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p>Script distribution:</p>
+						<p>
+							<ul style="font-size: 30px;">
+							<li>No significant differences for corpus distribution</li>		
+							<li>("No Data" resembles 4 Tablets that are part of the "Others" category on the left pie)</li>							
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p1>Does the corpus change with minimum_length?</p> 
+						<div class="p_iframe">
+							<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/n_date_comp.html">	
+							</iframe>
+						</div>
+					</section>
+					<section>
+						<p>Approximate dates:</p>
+						<p>
+							<ul style="font-size: 30px;">
+							<li>We can see a slight "change" of the corpus</li>		
+							<li>668-631 looses 7.9%</li>						
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p1>Does the corpus change with minimum_length?</p> 
+						<div class="p_iframe">
+							<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/n_prov_comp.html">	
+							</iframe>
+						</div>
+					</section>
+					<section>
+						<p>Approximate dates:</p>
+						<p>
+							<ul style="font-size: 30px;">
+							<li>Nineveh looses a lot of texts</li>		
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p1>Does the corpus change with minimum_length?</p> 
+						<div class="p_iframe">
+							<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/n_rule_comp.html">	
+							</iframe>
+						</div>
+					</section>
+					<section>
+						<p>Approximate dates:</p>
+						<p>
+							<ul style="font-size: 30px;">
+							<li>Shalmaneser V falls out of the dataframe</li>
+							<li>Predictably Ashurbanipal loses a cut</li>		
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<p class="fragment fade-out">What does this mean for our results?</p> 
+					<p class="fragment fade-up">Should we describe the  <em>changes</em> to the corpus?</p>
+				</section>
+				<section><h6>Comparing metrics & methods</h6><p style="font-size: 30px;">t-SNE euclidean/cosine/cityblock & lemma/normalized/unicode</p></section>
+				<section>
+					<section>
+						<p1>t-SNE euclidean + distance_calculator euclidean: Lemma</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE euclidean + distance_calculator euclidean_lemma2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE euclidean + distance_calculator euclidean: Normalized</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE euclidean + distance_calculator euclidean_norm2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE euclidean + distance_calculator euclidean: Unicode</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE euclidean + distance_calculator euclidean_uni2.html">	
+								</iframe>
+							</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p1>t-SNE cosine + distance_calculator cosine: Lemma</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE cosine + distance_calculator cosine_lemma2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE cosine + distance_calculator cosine: Normalized</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE cosine + distance_calculator cosine_norm2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE cosine + distance_calculator cosine: Unicode</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE cosine + distance_calculator cosine_uni2.html">	
+								</iframe>
+							</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p1>t-SNE cityblock + distance_calculator cityblock: Lemma</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE cityblock + distance_calculator cityblock_lemma2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE cityblock + distance_calculator cityblock: Normalized</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE cityblock + distance_calculator cityblock_norm2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE cityblock + distance_calculator cityblock: Unicode</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE cityblock + distance_calculator cityblock_uni2.html">	
+								</iframe>
+							</div>
+					</section>
+				</section>
+				<section><h6>Bonus Plot 🙃</h6></section>
+				<section>
+					<section>
+						<p1>t-SNE jaccard + distance_calculator cosine: Lemma</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE jaccard + distance_calculator cosine_lemma2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE jaccard + distance_calculator cosine: Normalized</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE jaccard + distance_calculator cosine_norm2.html">	
+								</iframe>
+							</div>
+					</section>
+					<section>
+						<p1>t-SNE jaccard + distance_calculator cosine: Unicode</p> 
+							<div class="p_iframe">
+								<iframe frameborder="0" seamless='seamless' scrolling=no src="objects/t-SNE jaccard + distance_calculator cosine_uni2.html">	
+								</iframe>
+							</div>
+					</section>
+				</section>
 			</div>
 		</div>
+
+	<!-- after that -> go to the scatter plots, cut them into three parts, make them vertical slides or animate them? (auto-animate) in the very end show jaccard and explain what it means. Send the full thing to shai to check and then push it to the disco, if he is fine w it -->
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
@@ -31,6 +233,8 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				slideNumber: true,
+				autoAnimate: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]

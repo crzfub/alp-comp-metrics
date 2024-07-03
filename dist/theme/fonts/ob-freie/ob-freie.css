@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'OB Freie';
+    src:  url('./OBFreie-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OB Freie';
+    src: url('./OBFreie-Light.otf') format('opentype');
+    font-weight:lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OB Freie';
+    src: url('./OBFreie-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
